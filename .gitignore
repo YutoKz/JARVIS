@@ -1,3 +1,9 @@
+src/api_key_list.py
+*.wav
+data/*
+*.exe
+*.whl
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
