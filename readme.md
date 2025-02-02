@@ -32,10 +32,12 @@ https://qiita.com/K2_ML/items/2804594454b39180c909
   - Coqui TTSに決定, Tortoise-TTSは高精度だが学習推論コスト高そう
 - TTSの学習データ
   - クレンジング周りがやりにくいので、データ準備はWSLのProject/try, tmp1で
+  - spleeterでBGM除去、10分ごとしかできない？ので10minでwavを区切ってそれぞれvocal抽出
+  - 音声データを無音で区切る
+  - 区切ったデータそれぞれをwhisperで認識
+  - アノテーションcsvに
   - 次
-    - spleeterでBGM除去、10分ごとしかできない？ので10minでwavを区切ってそれぞれvocal抽出
-    - 音声データを無音で区切る
-    - 区切ったデータそれぞれをwhisperで認識
+    - いよいよ学習
 
 ## 課題
 
